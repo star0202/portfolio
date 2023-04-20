@@ -20,7 +20,7 @@
       <div class="flex-grow" />
       <div class="flex gap-4 text-lg">
         <a
-          href="https://discord.com/users/798690702635827200"
+          href="https://discord.gg/APKV8NF8Wd"
           target="_blank"
           rel="noreferrer"
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"

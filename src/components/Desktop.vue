@@ -63,11 +63,7 @@ const openWindow = (id: number) => {
   right: 10px;
 }
 
-.shortcut-icon {
-  @apply shadow-2xl;
-  &:hover {
-    @apply brightness-95 transition-all duration-300;
-    cursor: pointer;
-  }
+.shortcut-icon:hover {
+  cursor: pointer;
 }
 </style>

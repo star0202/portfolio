@@ -1,0 +1,99 @@
+<template>
+  <div class="p-4">
+    <div class="text-2xl">Teams</div>
+    <div class="mt-2">
+      <div v-for="team in teams" class="border-t pt-4 flex gap-4">
+        <img
+          :src="`https://github.com/${team.org}.png`"
+          class="w-16 h-16 rounded-xl"
+          v-if="team.org"
+        />
+        <div class="flex-grow flex flex-col gap-1">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl">{{ team.name }}</div>
+            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="text-md md-2">{{ team.from }} ~ {{ team.to }}</div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div>Position</div>
+            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div>{{ team.position }}</div>
+          </div>
+          <div class="flex gap-4 text-lg pb-4">
+            <a
+              :href=team.homepage
+              target="_blank"
+              rel="noreferrer"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              v-if="team.homepage"
+            >
+              <font-awesome-icon :icon="['fas', 'globe']" />
+            </a>
+            <a
+              :href="`https://github.com/${team.org}`"
+              target="_blank"
+              rel="noreferrer"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              v-if="team.org"
+            >
+              <font-awesome-icon :icon="['fab', 'github']" />
+            </a>
+            <a
+              :href="`https://discord.gg/${team.discord}`"
+              target="_blank"
+              rel="noreferrer"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              v-if="team.discord"
+            >
+              <font-awesome-icon :icon="['fab', 'discord']" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts" setup>
+type Team = {
+  name: string
+  org?: string
+  discord?: string
+  homepage?: string
+  position: string
+  from: string
+  to: string
+}
+
+const teams: Team[] = [
+  {
+    name: 'Team Crescendo',
+    org: 'team-crescendo',
+    discord: 'teamcrsd',
+    homepage: 'https://team-crescendo.me',
+    position: 'Bot Developer',
+    from: '2023',
+    to: 'now',
+  },
+  {
+    name: 'Team White',
+    org: 'dev-White-team',
+    position: 'Bot Developer, Co-Leader',
+    from: '2021',
+    to: '2023',
+  },
+  {
+    name: 'Studio Orora',
+    position: 'Bot Developer',
+    from: '2021',
+    to: '2023',
+  },
+  {
+    name: 'Team Accu',
+    org: 'team-accu',
+    position: 'Bot Developer',
+    from: '2021',
+    to: '2023',
+  }
+]
+</script>

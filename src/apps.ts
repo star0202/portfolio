@@ -18,4 +18,12 @@ export const apps = [
     height: 210,
     content: async () => (await import('./windows/About.vue')).default,
   },
+  {
+    name: 'Teams',
+    title: 'Teams',
+    icon: ['fas', 'users'],
+    width: 500,
+    height: 400,
+    content: async () => (await import('./windows/Teams.vue')).default,
+  },
 ] as Window[]

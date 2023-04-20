@@ -21,7 +21,7 @@
           </div>
           <div class="flex gap-4 text-lg pb-4">
             <a
-              :href=team.homepage
+              :href="team.homepage"
               target="_blank"
               rel="noreferrer"
               class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
@@ -94,6 +94,6 @@ const teams: Team[] = [
     position: 'Bot Developer',
     from: '2021',
     to: '2023',
-  }
+  },
 ]
 </script>

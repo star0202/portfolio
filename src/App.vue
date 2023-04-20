@@ -40,5 +40,4 @@ import { useMainStore } from './store'
 import Window from './components/Window.vue'
 
 const { windows } = useMainStore()
-
 </script>

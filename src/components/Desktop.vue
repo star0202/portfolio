@@ -13,9 +13,7 @@
       />
       {{ i.name }}
     </div>
-    <div class="footer">
-      Made with pikokr ❤️
-    </div>
+    <div class="footer">Made with pikokr ❤️</div>
   </div>
 </template>
 

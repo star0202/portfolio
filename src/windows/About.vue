@@ -3,7 +3,7 @@
     <img
       src="https://github.com/star0202.png"
       alt="pfp"
-      class="w-36 h-36 ring rounded-xl"
+      class="w-36 h-36 rounded-xl"
     />
     <div class="flex-grow flex flex-col gap-1">
       <div class="text-3xl">Starcea / 스타샤</div>

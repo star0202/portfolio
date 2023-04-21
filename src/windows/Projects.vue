@@ -58,7 +58,7 @@ const projects: Project[] = [
     name: 'Crenata',
     techs: ['Python'],
     description: 'Rena Open Source Project',
-    repo: 'team-crescendo/crenata',
+    repo: 'team-crescendo/Crenata',
   },
   {
     name: 'Rena-Reverse',
@@ -85,10 +85,10 @@ const projects: Project[] = [
     repo: 'star0202/Selenium',
   },
   {
-    name: 'Whitebot',
+    name: 'WhiteBot',
     techs: ['Python'],
     description: 'Utility Discord Bot',
-    repo: 'dev-White-Team/Whitebot',
+    repo: 'dev-White-Team/WhiteBot',
   },
 ]
 </script>

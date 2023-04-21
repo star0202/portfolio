@@ -10,7 +10,7 @@
       <div class="flex items-center gap-4">
         <div>Age</div>
         <div class="flex-grow border-b-2 border-black border-dotted" />
-        <div>{{ year }}y/o</div>
+        <div>{{ year }}y (2009/02/02)</div>
       </div>
       <div class="flex items-center gap-4">
         <div>Pronouns</div>

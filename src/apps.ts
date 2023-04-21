@@ -34,4 +34,12 @@ export const apps: Window[] = [
     height: 500,
     content: async () => (await import('./windows/Projects.vue')).default,
   },
+  {
+    name: 'Educations',
+    title: 'Educations',
+    icon: ['fas', 'graduation-cap'],
+    width: 400,
+    height: 400,
+    content: async () => (await import('./windows/Edu.vue')).default,
+  },
 ]

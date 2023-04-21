@@ -13,7 +13,11 @@
       />
       {{ i.name }}
     </div>
-    <div class="footer">Made with pikokr ❤️</div>
+    <div class="footer">
+      <a href="https://github.com/pikokr" target="_blank" rel="noreferrer"
+        >Made with pikokr ❤️</a
+      >
+    </div>
   </div>
 </template>
 

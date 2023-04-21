@@ -3,7 +3,7 @@ import { Component } from 'vue'
 export type Window = {
   name: string
   title: string
-  icon?: string[]
+  icon: string[]
   width: number
   height: number
   content: () => Promise<Component>

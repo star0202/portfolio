@@ -6,11 +6,7 @@
       :key="i.index"
       @click="openWindow(i.index)"
     >
-      <font-awesome-icon
-        :icon="i.icon ?? ['fas', 'window-maximize']"
-        size="3x"
-        class="shortcut-icon"
-      />
+      <font-awesome-icon :icon="i.icon" size="3x" class="shortcut-icon" />
       {{ i.name }}
     </div>
     <div class="footer">

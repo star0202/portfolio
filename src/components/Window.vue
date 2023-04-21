@@ -160,7 +160,7 @@ onUnmounted(() => {
     align-items: center;
     @apply px-3 flex gap-4 border-b;
     .title {
-      @apply flex-grow text-center;
+      @apply flex-grow;
     }
     .icons {
       @apply flex gap-2;

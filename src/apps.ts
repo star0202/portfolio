@@ -22,7 +22,7 @@ export const apps: Window[] = [
     name: 'Teams',
     title: 'Teams',
     icon: ['fas', 'users'],
-    width: 500,
+    width: 450,
     height: 400,
     content: async () => (await import('./windows/Teams.vue')).default,
   },

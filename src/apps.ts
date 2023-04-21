@@ -9,7 +9,7 @@ export type Window = {
   content: () => Promise<Component>
 }
 
-export const apps = [
+export const apps: Window[] = [
   {
     name: 'About',
     title: 'About Me',
@@ -26,4 +26,12 @@ export const apps = [
     height: 400,
     content: async () => (await import('./windows/Teams.vue')).default,
   },
-] as Window[]
+  {
+    name: 'Projects',
+    title: 'Projects',
+    icon: ['fas', 'project-diagram'],
+    width: 300,
+    height: 500,
+    content: async () => (await import('./windows/Projects.vue')).default,
+  },
+]

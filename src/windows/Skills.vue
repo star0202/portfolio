@@ -1,6 +1,9 @@
 <template>
   <div class="p-4">
-    <div class="text-2xl">Skills</div>
+    <div class="text-2xl">
+      {{ Object.values(skills).reduce((cnt, v) => cnt + v.length, 0) }} Noteable
+      Skills
+    </div>
     <div class="mt-2">
       <div
         v-for="[name, badges] in Object.entries(skills)"

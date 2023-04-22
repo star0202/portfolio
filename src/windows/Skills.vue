@@ -1,9 +1,6 @@
 <template>
   <div class="p-4">
-    <div class="text-2xl">
-      {{ Object.values(skills).reduce((cnt, v) => cnt + v.length, 0) }} Noteable
-      Skills
-    </div>
+    <div class="text-2xl">{{ skillsCount }} Noteable Skills</div>
     <div class="mt-2">
       <div
         v-for="[name, badges] in Object.entries(skills)"
@@ -108,4 +105,6 @@ const skills: {
     'https://img.shields.io/badge/wireguard-%2388171A.svg?style=for-the-badge&logo=wireguard&logoColor=white',
   ],
 }
+
+const skillsCount = Object.values(skills).reduce((cnt, v) => cnt + v.length, 0)
 </script>

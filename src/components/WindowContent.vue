@@ -9,5 +9,3 @@ const { content } = defineProps<{ content: () => Promise<Component> }>()
 
 const Comp = await content()
 </script>
-
-<style scoped></style>

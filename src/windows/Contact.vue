@@ -22,7 +22,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 const discord = (
   await(
     await fetch('https://api.lanyard.rest/v1/users/798690702635827200')

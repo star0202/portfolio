@@ -39,7 +39,6 @@ const openWindow = (id: number) => {
       x: document.body.clientWidth / 2,
       y: document.body.clientHeight / 2,
       id: id,
-      scroll: 0,
     }
   )
 }

@@ -24,7 +24,6 @@
         height: `${app.height}px`,
         maxWidth: '100vw',
       }"
-      @scroll="scroll"
       class="overflow-y-auto window-content"
     >
       <Suspense>
@@ -42,7 +41,7 @@
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup lang="ts">
 import { useMainStore, WindowData } from '../store'
 import { apps } from '../apps'
 import { storeToRefs } from 'pinia'
@@ -66,20 +65,8 @@ const windowBoundary = 10
 
 const click = () => {
   const idx = windows.value.findIndex((x) => x.id === win.id)
-  const element = document.getElementsByClassName('window-content')?.item(idx)
-  // console.log(element)
-  // console.log(windows.value[idx].scroll)
-  element?.scrollTo({
-    top: windows.value[idx].scroll,
-  })
-  // console.log(element?.scrollTop)
   const data = windows.value.splice(idx, 1)[0]
   windows.value.push(data)
-}
-
-const scroll = (e: Event) => {
-  const target = e.target as HTMLElement
-  win.scroll = target.scrollTop
 }
 
 const mouseDown = (e: MouseEvent) => {

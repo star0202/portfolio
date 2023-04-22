@@ -27,12 +27,14 @@ body {
   user-select: none;
 }
 </style>
+
 <style scoped>
 .root {
   @apply h-screen w-screen text-white flex flex-col;
   background: #a5abfb;
 }
 </style>
+
 <script setup lang="ts">
 import MenuBar from './components/MenuBar.vue'
 import Desktop from './components/Desktop.vue'

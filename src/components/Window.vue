@@ -76,6 +76,7 @@ const mouseDown = (e: MouseEvent) => {
   document.onmouseup = closeDrag
   document.onmousemove = drag
 }
+
 const drag = (e: MouseEvent) => {
   e.preventDefault()
   // calculate the new cursor position:
@@ -92,10 +93,12 @@ const drag = (e: MouseEvent) => {
     document.body.clientHeight - (app.height / 2 + 20 + windowBoundary)
   )
 }
+
 const closeDrag = () => {
   document.onmouseup = null
   document.onmousemove = null
 }
+
 const closeWindow = () => {
   windows.value.splice(
     windows.value.findIndex((x) => x.id === win.id),

@@ -4,6 +4,7 @@ export type WindowData = {
   id: number
   x: number
   y: number
+  scroll: number
 }
 
 export const useMainStore = defineStore('main', {

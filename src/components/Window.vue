@@ -61,6 +61,8 @@ let pos1 = 0,
   pos3 = 0,
   pos4 = 0
 
+const windowBoundary = 10
+
 const click = () => {
   const idx = windows.value.findIndex((x) => x.id === win.id)
   const data = windows.value.splice(idx, 1)[0]
@@ -82,12 +84,12 @@ const drag = (e: MouseEvent) => {
   pos3 = e.clientX
   pos4 = e.clientY
   win.x = Math.min(
-    Math.max(app.width / 2 + 20, win.x - pos1),
-    document.body.clientWidth - (app.width / 2 + 20)
+    Math.max(app.width / 2 + windowBoundary, win.x - pos1),
+    document.body.clientWidth - (app.width / 2 + windowBoundary)
   )
   win.y = Math.min(
-    Math.max(app.height / 2 + 20 + 20, win.y - pos2),
-    document.body.clientHeight - (app.height / 2 + 20 + 20)
+    Math.max(app.height / 2 + 20 + windowBoundary, win.y - pos2),
+    document.body.clientHeight - (app.height / 2 + 20 + windowBoundary)
   )
 }
 const closeDrag = () => {

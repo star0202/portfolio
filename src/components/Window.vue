@@ -106,14 +106,14 @@ const closeWindow = () => {
 const handleResize = () => {
   if (app.width < window.innerWidth) {
     win.x = Math.min(
-      Math.max(app.width / 2 + 20, win.x - pos1),
-      document.body.clientWidth - (window.innerWidth / 2 + 20)
+      Math.max(app.width / 2 + windowBoundary, win.x - pos1),
+      document.body.clientWidth - (window.innerWidth / 2 + windowBoundary)
     )
   }
   if (app.height < win.y + app.height) {
     win.y = Math.min(
-      Math.max(window.innerHeight / 2 + 20 + 20),
-      document.body.clientHeight - (app.height / 2 + 20 + 20)
+      Math.max(window.innerHeight / 2 + 20 + windowBoundary),
+      document.body.clientHeight - (app.height / 2 + 20 + windowBoundary)
     )
   }
 }

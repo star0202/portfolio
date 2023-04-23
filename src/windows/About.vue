@@ -29,7 +29,7 @@
         </a>
         <a
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
-          href="mailto:stardev.uwu@gmail.com"
+          href="mailto:star@crsd.team"
           rel="noreferrer"
           target="_blank"
         >

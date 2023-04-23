@@ -2,12 +2,9 @@
   <div class="p-4">
     <div class="text-2xl">Contact</div>
     <div class="flex flex-col">
-      <a
-        class="flex gap-2 items-center text-lg"
-        href="mailto:stardev.uwu@gmail.com"
-      >
+      <a class="flex gap-2 items-center text-lg" href="mailto:star@crsd.team">
         <font-awesome-icon :icon="['fas', 'envelope']" />
-        <span>stardev.uwu@gmail.com</span>
+        <span>star@crsd.team</span>
       </a>
       <a
         class="flex gap-2 items-center text-lg"

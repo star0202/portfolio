@@ -12,11 +12,11 @@
           <div class="flex items-center gap-4">{{ project.description }}</div>
           <div class="flex gap-4 text-lg pb-4">
             <a
-              :href="`https://github.com/${project.repo}`"
-              target="_blank"
-              rel="noreferrer"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
               v-if="project.repo"
+              :href="`https://github.com/${project.repo}`"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              rel="noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
             </a>

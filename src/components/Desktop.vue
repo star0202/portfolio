@@ -2,22 +2,22 @@
   <div class="container">
     <div
       v-for="i in apps"
-      class="flex flex-col items-center w-20 h-20 justify-center gap-2"
       :key="i.index"
+      class="flex flex-col items-center w-20 h-20 justify-center gap-2"
       @click="openWindow(i.index)"
     >
-      <font-awesome-icon :icon="i.icon" size="3x" class="shortcut-icon" />
+      <font-awesome-icon :icon="i.icon" class="shortcut-icon" size="3x" />
       {{ i.name }}
     </div>
     <div class="footer">
-      <a href="https://github.com/pikokr" target="_blank" rel="noreferrer"
+      <a href="https://github.com/pikokr" rel="noreferrer" target="_blank"
         >Made with pikokr ❤️</a
       >
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { apps as appList } from '../apps'
 import { useMainStore } from '../store'
 import { storeToRefs } from 'pinia'
@@ -44,7 +44,7 @@ const openWindow = (id: number) => {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .container {
   @apply pl-8 pt-8 flex flex-col flex-wrap flex-grow h-0 w-0 items-start gap-4;
   @media (max-width: 768px) {

@@ -3,7 +3,7 @@
     <MenuBar />
     <Desktop />
     <div>
-      <Window v-for="window in windows" :win="window" :key="window.id" />
+      <Window v-for="window in windows" :key="window.id" :win="window" />
     </div>
   </div>
 </template>
@@ -35,7 +35,7 @@ body {
 }
 </style>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import MenuBar from './components/MenuBar.vue'
 import Desktop from './components/Desktop.vue'
 import { useMainStore } from './store'

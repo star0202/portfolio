@@ -5,8 +5,8 @@
       left: `${win.x}px`,
       top: `${win.y}px`,
     }"
-    @mousedown="click"
     class="window"
+    @mousedown="click"
   >
     <div class="titleBar" @mousedown="mouseDown">
       <div class="icons">
@@ -15,7 +15,7 @@
       <div class="title">{{ app.title }}</div>
     </div>
     <div class="titleBar__mobile">
-      <font-awesome-icon @click="closeWindow" :icon="['fas', 'chevron-left']" />
+      <font-awesome-icon :icon="['fas', 'chevron-left']" @click="closeWindow" />
       <div class="flex-grow text-center">{{ app.title }}</div>
     </div>
     <div
@@ -41,7 +41,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { useMainStore, WindowData } from '../store'
 import { apps } from '../apps'
 import { storeToRefs } from 'pinia'
@@ -130,7 +130,7 @@ onUnmounted(() => {
 })
 </script>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
 .window {
   transform: translate(-50%, -50%);
   @apply bg-white shadow-2xl text-black rounded-xl overflow-hidden flex flex-col;

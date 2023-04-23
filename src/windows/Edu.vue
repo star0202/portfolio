@@ -13,16 +13,16 @@
               {{ edu.from + (edu.to ? ' ~ ' + edu.to : '') }}
             </div>
           </div>
-          <div class="flex items-center gap-4" v-if="edu.description">
+          <div v-if="edu.description" class="flex items-center gap-4">
             {{ edu.description }}
           </div>
           <div class="flex gap-4 text-lg pb-4">
             <a
-              :href="edu.homepage"
-              target="_blank"
-              rel="noreferrer"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
               v-if="edu.homepage"
+              :href="edu.homepage"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              rel="noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fas', 'globe']" />
             </a>

@@ -12,8 +12,8 @@
       <a
         class="flex gap-2 items-center text-lg"
         href="https://discord.gg/APKV8NF8Wd"
-        target="_blank"
         rel="noreferrer"
+        target="_blank"
       >
         <font-awesome-icon :icon="['fab', 'discord']" />
         <span>{{ discord.username }}#{{ discord.discriminator }}</span>

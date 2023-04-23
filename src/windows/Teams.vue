@@ -4,9 +4,9 @@
     <div class="mt-2">
       <div v-for="team in teams" class="border-t pt-4 flex gap-4">
         <img
+          v-if="team.org"
           :src="`https://github.com/${team.org}.png`"
           class="w-16 h-16 rounded-xl"
-          v-if="team.org"
         />
         <div class="flex-grow flex flex-col gap-1">
           <div class="flex items-center gap-4">
@@ -21,29 +21,29 @@
           </div>
           <div class="flex gap-4 text-lg pb-4">
             <a
-              :href="team.homepage"
-              target="_blank"
-              rel="noreferrer"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
               v-if="team.homepage"
+              :href="team.homepage"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              rel="noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fas', 'globe']" />
             </a>
             <a
-              :href="`https://github.com/${team.org}`"
-              target="_blank"
-              rel="noreferrer"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
               v-if="team.org"
+              :href="`https://github.com/${team.org}`"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              rel="noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
             </a>
             <a
-              :href="`https://discord.gg/${team.discord}`"
-              target="_blank"
-              rel="noreferrer"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
               v-if="team.discord"
+              :href="`https://discord.gg/${team.discord}`"
+              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              rel="noreferrer"
+              target="_blank"
             >
               <font-awesome-icon :icon="['fab', 'discord']" />
             </a>

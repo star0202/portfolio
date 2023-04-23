@@ -1,9 +1,9 @@
 <template>
   <div class="p-8 flex gap-4">
     <img
-      src="https://github.com/star0202.png"
       alt="pfp"
       class="w-36 h-36 rounded-xl"
+      src="https://github.com/star0202.png"
     />
     <div class="flex-grow flex flex-col gap-1">
       <div class="text-3xl">Starcea / 스타샤</div>
@@ -20,34 +20,34 @@
       <div class="flex-grow" />
       <div class="flex gap-4 text-lg">
         <a
-          href="https://discord.gg/APKV8NF8Wd"
-          target="_blank"
-          rel="noreferrer"
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          href="https://discord.gg/APKV8NF8Wd"
+          rel="noreferrer"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'discord']" />
         </a>
         <a
-          href="mailto:stardev.uwu@gmail.com"
-          target="_blank"
-          rel="noreferrer"
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          href="mailto:stardev.uwu@gmail.com"
+          rel="noreferrer"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
         <a
-          href="https://github.com/star0202"
-          target="_blank"
-          rel="noreferrer"
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          href="https://github.com/star0202"
+          rel="noreferrer"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
         <a
-          href="https://toss.me/starcea"
-          target="_blank"
-          rel="noreferrer"
           class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          href="https://toss.me/starcea"
+          rel="noreferrer"
+          target="_blank"
         >
           <font-awesome-icon :icon="['fas', 'gift']" />
         </a>

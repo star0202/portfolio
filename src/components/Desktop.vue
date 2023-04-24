@@ -44,7 +44,7 @@ const openWindow = (id: number) => {
 }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .container {
   @apply pl-8 pt-8 flex flex-col flex-wrap flex-grow h-0 w-0 items-start gap-4;
   @media (max-width: 768px) {

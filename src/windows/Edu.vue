@@ -16,7 +16,7 @@
           <div v-if="edu.description" class="flex items-center gap-4">
             {{ edu.description }}
           </div>
-          <div class="flex gap-4 text-lg pb-4">
+          <div class="mt-1 flex gap-4 text-lg pb-4">
             <a
               v-if="edu.homepage"
               :href="edu.homepage"

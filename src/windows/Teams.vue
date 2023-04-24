@@ -19,7 +19,7 @@
             <div class="line-dot" />
             <div>{{ team.position }}</div>
           </div>
-          <div class="flex gap-4 text-lg pb-4">
+          <div class="mt-1 flex gap-4 text-lg pb-4">
             <a
               v-if="team.homepage"
               :href="team.homepage"

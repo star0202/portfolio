@@ -10,7 +10,7 @@
             <div class="text-md md-2">{{ project.techs.join(', ') }}</div>
           </div>
           <div class="flex items-center gap-4">{{ project.description }}</div>
-          <div class="flex gap-4 text-lg pb-4">
+          <div class="mt-1 flex gap-4 text-lg pb-4">
             <a
               v-if="project.repo"
               :href="`https://github.com/${project.repo}`"

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@catppuccin/tailwindcss': ^0.1.1
   '@fortawesome/fontawesome-svg-core': ^6.4.0
   '@fortawesome/free-brands-svg-icons': ^6.4.0
   '@fortawesome/free-regular-svg-icons': ^6.4.0
@@ -27,6 +28,7 @@ dependencies:
   vue: 3.2.47
 
 devDependencies:
+  '@catppuccin/tailwindcss': 0.1.1_postcss@8.4.23
   '@fortawesome/fontawesome-svg-core': 6.4.0
   '@fortawesome/vue-fontawesome': 3.0.3_5vq7vkrflr3ckmegqnktogj5ty
   '@vitejs/plugin-vue': 4.1.0_vite@4.2.2+vue@3.2.47
@@ -62,6 +64,20 @@ packages:
       '@babel/helper-string-parser': 7.19.4
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
+
+  /@catppuccin/palette/0.1.5:
+    resolution: {integrity: sha512-IQLsZwXDMpLc5CFGjIMa/gFnnFL/QLB280F11B51JweZHerZ/FgPXdIR4eQqn1CgrqI3wGfgnj1LVPx12DV/Uw==}
+    dev: true
+
+  /@catppuccin/tailwindcss/0.1.1_postcss@8.4.23:
+    resolution: {integrity: sha512-WWOzx8uOf3QPZ1HdVSkpgaqzMzrfYpOgAketQAQ7493eFhlYC4bJ1ViT5ukhwfhzuu3xnmke+Op2qjhHnyjt8g==}
+    dependencies:
+      '@catppuccin/palette': 0.1.5
+      tailwindcss: 3.3.1_postcss@8.4.23
+    transitivePeerDependencies:
+      - postcss
+      - ts-node
+    dev: true
 
   /@esbuild/android-arm/0.17.17:
     resolution: {integrity: sha512-E6VAZwN7diCa3labs0GYvhEPL2M94WLF8A+czO8hfjREXxba8Ng7nM5VxV+9ihNXIY1iQO1XxUU4P7hbqbICxg==}

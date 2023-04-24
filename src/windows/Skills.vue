@@ -9,7 +9,7 @@
         <div class="flex flex-col gap-1">
           <div class="flex items-center gap-4">
             <div class="text-xl capitalize">{{ name }}</div>
-            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="line-dot" />
             <div class="text-md md-2">{{ badges.length }} Skills</div>
           </div>
           <div class="flex flex-wrap gap-4 text-lg pb-4">

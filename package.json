@@ -17,6 +17,7 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@catppuccin/tailwindcss": "^0.1.1",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
     "@vitejs/plugin-vue": "^4.1.0",

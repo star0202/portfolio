@@ -11,19 +11,19 @@
         <div class="flex-grow flex flex-col gap-1">
           <div class="flex items-center gap-4">
             <div class="text-2xl">{{ team.name }}</div>
-            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="line-dot" />
             <div class="text-md md-2">{{ team.from }} ~ {{ team.to }}</div>
           </div>
           <div class="flex items-center gap-4">
             <div>Position</div>
-            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="line-dot" />
             <div>{{ team.position }}</div>
           </div>
           <div class="flex gap-4 text-lg pb-4">
             <a
               v-if="team.homepage"
               :href="team.homepage"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              class="button-icon"
               rel="noreferrer"
               target="_blank"
             >
@@ -32,7 +32,7 @@
             <a
               v-if="team.org"
               :href="`https://github.com/${team.org}`"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              class="button-icon"
               rel="noreferrer"
               target="_blank"
             >
@@ -41,7 +41,7 @@
             <a
               v-if="team.discord"
               :href="`https://discord.gg/${team.discord}`"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              class="button-icon"
               rel="noreferrer"
               target="_blank"
             >

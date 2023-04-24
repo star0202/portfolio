@@ -8,7 +8,7 @@
             <div class="text-xl">
               {{ edu.name + (edu.isGifted ? ' (Gifted Edu)' : '') }}
             </div>
-            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="line-dot" />
             <div class="text-md md-2">
               {{ edu.from + (edu.to ? ' ~ ' + edu.to : '') }}
             </div>
@@ -20,7 +20,7 @@
             <a
               v-if="edu.homepage"
               :href="edu.homepage"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              class="button-icon"
               rel="noreferrer"
               target="_blank"
             >

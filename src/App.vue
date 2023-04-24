@@ -30,8 +30,7 @@ body {
 
 <style scoped>
 .root {
-  @apply h-screen w-screen text-white flex flex-col;
-  background: #a5abfb;
+  @apply bg-ctp-base h-screen w-screen text-ctp-text flex flex-col;
 }
 </style>
 

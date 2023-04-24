@@ -133,7 +133,7 @@ onUnmounted(() => {
 <style lang="scss" scoped>
 .window {
   transform: translate(-50%, -50%);
-  @apply bg-white shadow-2xl text-black rounded-xl overflow-hidden flex flex-col;
+  @apply bg-ctp-base border-2 border-ctp-pink shadow-2xl text-ctp-text rounded-xl overflow-hidden flex flex-col outline-ctp-pink;
   position: fixed;
   @media (max-width: 768px) {
     left: 0 !important;
@@ -172,7 +172,7 @@ onUnmounted(() => {
       .icon {
         width: 20px;
         height: 20px;
-        @apply rounded-full bg-red-400 hover:brightness-90 active:brightness-75 transition-all cursor-pointer;
+        @apply rounded-full bg-ctp-red hover:bg-ctp-maroon transition-all cursor-pointer;
       }
     }
   }

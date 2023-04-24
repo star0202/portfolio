@@ -9,18 +9,18 @@
       <div class="text-3xl">Starcea / 스타샤</div>
       <div class="flex items-center gap-4">
         <div>Age</div>
-        <div class="flex-grow border-b-2 border-black border-dotted" />
+        <div class="line-dot" />
         <div>{{ year }}y (2009/02/02)</div>
       </div>
       <div class="flex items-center gap-4">
         <div>Pronouns</div>
-        <div class="flex-grow border-b-2 border-black border-dotted" />
+        <div class="line-dot" />
         <div>She/her</div>
       </div>
       <div class="flex-grow" />
       <div class="flex gap-4 text-lg">
         <a
-          class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          class="button-icon"
           href="https://discord.gg/APKV8NF8Wd"
           rel="noreferrer"
           target="_blank"
@@ -28,7 +28,7 @@
           <font-awesome-icon :icon="['fab', 'discord']" />
         </a>
         <a
-          class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          class="button-icon"
           href="mailto:star@crsd.team"
           rel="noreferrer"
           target="_blank"
@@ -36,7 +36,7 @@
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
         <a
-          class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          class="button-icon"
           href="https://github.com/star0202"
           rel="noreferrer"
           target="_blank"
@@ -44,7 +44,7 @@
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
         <a
-          class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+          class="button-icon"
           href="https://toss.me/starcea"
           rel="noreferrer"
           target="_blank"

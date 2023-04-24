@@ -6,7 +6,7 @@
         <div class="flex-grow flex flex-col gap-1">
           <div class="flex items-center gap-4">
             <div class="text-xl">{{ project.name }}</div>
-            <div class="flex-grow border-b-2 border-black border-dotted" />
+            <div class="line-dot" />
             <div class="text-md md-2">{{ project.techs.join(', ') }}</div>
           </div>
           <div class="flex items-center gap-4">{{ project.description }}</div>
@@ -14,7 +14,7 @@
             <a
               v-if="project.repo"
               :href="`https://github.com/${project.repo}`"
-              class="w-8 h-8 shadow-md ring ring-black ring-opacity-5 rounded-full flex justify-center items-center"
+              class="button-icon"
               rel="noreferrer"
               target="_blank"
             >

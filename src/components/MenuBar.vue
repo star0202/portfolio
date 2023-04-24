@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black bg-opacity-50 h-12 px-4 flex items-center">
+  <div class="bg-ctp-mantle h-12 px-4 flex items-center">
     Starcea
     <div class="flex-grow" />
     <a href="https://github.com/star0202" rel="noreferrer" target="_blank">

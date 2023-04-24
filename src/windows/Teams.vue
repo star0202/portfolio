@@ -6,7 +6,7 @@
         <img
           v-if="team.org"
           :src="`https://github.com/${team.org}.png`"
-          class="w-16 h-16 rounded-xl"
+          class="w-16 h-16 rounded-xl ring ring-ctp-pink"
         />
         <div class="flex-grow flex flex-col gap-1">
           <div class="flex items-center gap-4">

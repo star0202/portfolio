@@ -2,27 +2,29 @@
   <div class="p-4">
     <div class="text-2xl">Contact</div>
     <div class="flex flex-col">
-      <a class="flex gap-2 items-center text-lg" href="mailto:star@crsd.team">
+      <a :href="`mailto:${mail}`" class="flex gap-2 items-center text-lg">
         <font-awesome-icon :icon="['fas', 'envelope']" />
-        <span>star@crsd.team</span>
+        <span>{{ mail }}</span>
       </a>
       <a
+        :href="`https://discord.gg/${discord.server}`"
         class="flex gap-2 items-center text-lg"
-        href="https://discord.gg/APKV8NF8Wd"
         rel="noreferrer"
         target="_blank"
       >
         <font-awesome-icon :icon="['fab', 'discord']" />
-        <span>{{ discord.username }}#{{ discord.discriminator }}</span>
+        <span>{{ user.username }}#{{ user.discriminator }}</span>
       </a>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-const discord = (
-  await(
-    await fetch('https://api.lanyard.rest/v1/users/798690702635827200')
-  ).json() as any
+import { discord, mail } from '../infos'
+
+const user = (
+  (await (
+    await fetch(`https://api.lanyard.rest/v1/users/${discord.id}`)
+  ).json()) as any
 ).data.discord_user
 </script>

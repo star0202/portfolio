@@ -10,7 +10,7 @@
       {{ i.name }}
     </div>
     <div class="footer">
-      <a href="https://github.com/pikokr" rel="noreferrer" target="_blank"
+      <a :href="`https://github.com/${paring}`" rel="noreferrer" target="_blank"
         >Made with pikokr ❤️</a
       >
     </div>
@@ -21,6 +21,7 @@
 import { apps as appList } from '../apps'
 import { useMainStore } from '../store'
 import { storeToRefs } from 'pinia'
+import { paring } from '../infos'
 
 const apps = appList.map((x, i) => ({ ...x, index: i }))
 

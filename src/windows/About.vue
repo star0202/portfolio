@@ -20,32 +20,32 @@
       <div class="flex-grow" />
       <div class="flex gap-4 text-lg">
         <a
+          :href="`https://discord.gg/${discord.server}`"
           class="button-icon"
-          href="https://discord.gg/APKV8NF8Wd"
           rel="noreferrer"
           target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'discord']" />
         </a>
         <a
+          :href="`mailto:${mail}`"
           class="button-icon"
-          href="mailto:star@crsd.team"
           rel="noreferrer"
           target="_blank"
         >
           <font-awesome-icon :icon="['fas', 'envelope']" />
         </a>
         <a
+          :href="`https://github.com/${github}`"
           class="button-icon"
-          href="https://github.com/star0202"
           rel="noreferrer"
           target="_blank"
         >
           <font-awesome-icon :icon="['fab', 'github']" />
         </a>
         <a
+          :href="`https://toss.me/${toss}`"
           class="button-icon"
-          href="https://toss.me/starcea"
           rel="noreferrer"
           target="_blank"
         >
@@ -57,6 +57,8 @@
 </template>
 
 <script lang="ts" setup>
+import { discord, github, mail, toss } from '../infos'
+
 const year = Math.floor(
   (Date.now() - new Date(2009, 1, 2, 0, 0, 0, 0).getTime()) /
     1000 /

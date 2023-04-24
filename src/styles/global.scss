@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Cafe24Dongdong';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  overflow: hidden;
+  font-family: Cafe24Dongdong, sans-serif;
+  user-select: none;
+}
+
+.button-icon {
+  @apply w-8 h-8 shadow-md ring ring-ctp-pink rounded-full flex justify-center items-center hover:bg-ctp-surface0 transition-all;
+}
+
+.line-dot {
+  @apply flex-grow border-b-2 border-ctp-subtext0 border-dotted;
+}

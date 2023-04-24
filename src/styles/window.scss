@@ -1,0 +1,79 @@
+.window {
+  transform: translate(-50%, -50%);
+  @apply bg-ctp-base border-2 border-ctp-pink shadow-2xl text-ctp-text rounded-xl overflow-hidden flex flex-col outline-ctp-pink;
+  position: fixed;
+  @media (max-width: 768px) {
+    left: 0 !important;
+    top: 0 !important;
+    transform: unset;
+    border-radius: 0 !important;
+    width: 100%;
+    height: 100%;
+    .titleBar {
+      display: none !important;
+    }
+    .titleBar__mobile {
+      display: flex !important;
+    }
+    .window-content {
+      width: 100vw !important;
+    }
+  }
+  .window-content {
+    flex-grow: 1;
+  }
+  .titleBar__mobile {
+    @apply p-4 border-b items-center;
+    display: none;
+  }
+  .titleBar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    @apply px-3 flex gap-4 border-b;
+    .title {
+      @apply flex-grow;
+    }
+    .icons {
+      @apply flex gap-2;
+      .icon {
+        width: 20px;
+        height: 20px;
+        @apply rounded-full bg-ctp-red hover:bg-ctp-maroon transition-all cursor-pointer;
+      }
+    }
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #555555;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}

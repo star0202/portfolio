@@ -46,23 +46,5 @@ const openWindow = (id: number) => {
 </script>
 
 <style scoped>
-.container {
-  @apply pl-8 pt-8 flex flex-col flex-wrap flex-grow h-0 w-0 items-start gap-4;
-  @media (max-width: 768px) {
-    flex-direction: row !important;
-    width: 100%;
-    height: 0 !important;
-    flex-grow: 0 !important;
-  }
-}
-
-.footer {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.shortcut-icon:hover {
-  cursor: pointer;
-}
+@import '../styles/desktop.scss';
 </style>

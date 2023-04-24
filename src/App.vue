@@ -1,5 +1,5 @@
 <template>
-  <div class="root">
+  <div class="bg-ctp-base h-screen w-screen text-ctp-text flex flex-col">
     <MenuBar />
     <Desktop />
     <div>
@@ -7,32 +7,6 @@
     </div>
   </div>
 </template>
-
-<style>
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-  font-family: 'Cafe24Dongdong';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff')
-    format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  overflow: hidden;
-  font-family: Cafe24Dongdong, sans-serif;
-  user-select: none;
-}
-</style>
-
-<style scoped>
-.root {
-  @apply bg-ctp-base h-screen w-screen text-ctp-text flex flex-col;
-}
-</style>
 
 <script lang="ts" setup>
 import MenuBar from './components/MenuBar.vue'

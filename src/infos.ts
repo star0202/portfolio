@@ -1,3 +1,5 @@
+export const boj = 'Starcea'
+
 export const discord = {
   id: 798690702635827200,
   server: 'APKV8NF8Wd',

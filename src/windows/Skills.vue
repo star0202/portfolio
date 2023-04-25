@@ -17,11 +17,18 @@
           </div>
         </div>
       </div>
+      <a :href="`https://solved.ac/profile/${boj}`"
+        ><img
+          :src="`http://mazassumnida.wtf/api/v2/generate_badge?boj=${boj}`"
+        />
+      </a>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
+import { boj } from '../infos'
+
 const skills: {
   [key: string]: string[]
 } = {

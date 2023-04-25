@@ -17,7 +17,10 @@
           </div>
         </div>
       </div>
-      <a :href="`https://solved.ac/profile/${boj}`"
+      <a
+        :href="`https://solved.ac/profile/${boj}`"
+        rel="noreferrer"
+        target="_blank"
         ><img
           :src="`http://mazassumnida.wtf/api/v2/generate_badge?boj=${boj}`"
         />

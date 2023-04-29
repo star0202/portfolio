@@ -3,10 +3,10 @@
     <div
       v-for="i in apps"
       :key="i.index"
-      class="flex flex-col items-center w-20 h-20 justify-center gap-2"
+      class="flex flex-col items-center w-20 h-20 justify-center gap-2 hover-button"
       @click="openWindow(i.index)"
     >
-      <font-awesome-icon :icon="i.icon" class="hover-icon" size="3x" />
+      <font-awesome-icon :icon="i.icon" size="3x" />
       {{ i.name }}
     </div>
     <div class="footer">

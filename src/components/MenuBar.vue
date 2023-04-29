@@ -6,7 +6,7 @@
       <font-awesome-icon
         :icon="['fab', 'github']"
         style="font-size: 18px"
-        class="hover-icon"
+        class="hover-button"
       />
     </a>
   </div>

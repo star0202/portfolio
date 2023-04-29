@@ -30,7 +30,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    @apply px-3 flex gap-4 border-b border-ctp-subtext0;
+    @apply px-3 flex gap-4 border-b-2 border-ctp-subtext0;
     .title {
       @apply flex-grow;
     }

@@ -2,13 +2,16 @@
   <div class="p-4">
     <div class="text-2xl">Contact</div>
     <div class="flex flex-col">
-      <a :href="`mailto:${mail}`" class="flex gap-2 items-center text-lg">
+      <a
+        :href="`mailto:${mail}`"
+        class="flex gap-2 items-center text-lg hyperlink"
+      >
         <font-awesome-icon :icon="['fas', 'envelope']" />
         <span>{{ mail }}</span>
       </a>
       <a
         :href="`https://discord.gg/${discord.server}`"
-        class="flex gap-2 items-center text-lg"
+        class="flex gap-2 items-center text-lg hyperlink"
         rel="noreferrer"
         target="_blank"
       >

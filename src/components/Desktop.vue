@@ -11,9 +11,7 @@
     </div>
     <div class="footer">
       <a :href="`https://github.com/${paring}`" rel="noreferrer" target="_blank"
-        ><div class="hover:text-ctp-blue transition-all">
-          Made with pikokr ❤️
-        </div></a
+        ><div class="hyperlink">Made with pikokr ❤️</div></a
       >
     </div>
   </div>

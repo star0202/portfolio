@@ -23,7 +23,7 @@
     flex-grow: 1;
   }
   .titleBar__mobile {
-    @apply p-4 border-b items-center;
+    @apply p-4 border-b-2 border-ctp-subtext0 items-center;
     display: none;
   }
   .titleBar {

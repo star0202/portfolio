@@ -6,12 +6,14 @@
       class="flex flex-col items-center w-20 h-20 justify-center gap-2"
       @click="openWindow(i.index)"
     >
-      <font-awesome-icon :icon="i.icon" class="shortcut-icon" size="3x" />
+      <font-awesome-icon :icon="i.icon" class="hover-icon" size="3x" />
       {{ i.name }}
     </div>
     <div class="footer">
       <a :href="`https://github.com/${paring}`" rel="noreferrer" target="_blank"
-        >Made with pikokr ❤️</a
+        ><div class="hover:text-ctp-blue transition-all">
+          Made with pikokr ❤️
+        </div></a
       >
     </div>
   </div>

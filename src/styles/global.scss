@@ -17,9 +17,18 @@ body {
 }
 
 .button-icon {
-  @apply w-8 h-8 shadow-md ring ring-ctp-pink rounded-full flex justify-center items-center hover:bg-ctp-surface0 transition-all;
+  @apply bg-ctp-surface1 w-8 h-8 shadow-md rounded-full flex justify-center items-center hover:bg-ctp-overlay0 transition-all;
 }
 
 .line-dot {
   @apply flex-grow border-b-2 border-ctp-subtext0 border-dotted;
+}
+
+.border-t {
+  @apply border-ctp-subtext0;
+}
+
+.hover-icon:hover {
+  @apply text-ctp-overlay2 transition-all;
+  cursor: pointer;
 }

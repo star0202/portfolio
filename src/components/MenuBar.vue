@@ -3,7 +3,11 @@
     Starcea
     <div class="flex-grow" />
     <a :href="`https://github.com/${github}`" rel="noreferrer" target="_blank">
-      <font-awesome-icon :icon="['fab', 'github']" style="font-size: 18px" />
+      <font-awesome-icon
+        :icon="['fab', 'github']"
+        style="font-size: 18px"
+        class="hover-icon"
+      />
     </a>
   </div>
 </template>

@@ -1,6 +1,6 @@
 .window {
   transform: translate(-50%, -50%);
-  @apply bg-ctp-base border-2 border-ctp-pink shadow-2xl text-ctp-text rounded-xl overflow-hidden flex flex-col outline-ctp-pink;
+  @apply bg-ctp-surface0 shadow-2xl text-ctp-text rounded-xl overflow-hidden flex flex-col;
   position: fixed;
   @media (max-width: 768px) {
     left: 0 !important;
@@ -30,7 +30,7 @@
     height: 40px;
     display: flex;
     align-items: center;
-    @apply px-3 flex gap-4 border-b;
+    @apply px-3 flex gap-4 border-b border-ctp-subtext0;
     .title {
       @apply flex-grow;
     }

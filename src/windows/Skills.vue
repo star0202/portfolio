@@ -13,7 +13,11 @@
             <div class="text-md md-2">{{ badges.length }} Skills</div>
           </div>
           <div class="flex flex-wrap gap-4 text-lg pb-4">
-            <img v-for="badge in badges" :src="badge" />
+            <img
+              v-for="badge in badges"
+              :src="badge"
+              class="rounded-tl-lg hover:brightness-90 transition-all"
+            />
           </div>
         </div>
       </div>

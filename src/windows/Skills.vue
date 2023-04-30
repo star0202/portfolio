@@ -16,7 +16,7 @@
             <img
               v-for="badge in badges"
               :src="badge"
-              class="rounded-tl-lg hover:brightness-90 transition-all"
+              class="rounded-tl-lg transition-all hover:brightness-90 transition-all"
             />
           </div>
         </div>

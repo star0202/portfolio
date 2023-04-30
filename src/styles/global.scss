@@ -17,7 +17,10 @@ body {
 }
 
 .button-icon {
-  @apply bg-ctp-surface1 w-8 h-8 shadow-md rounded-full flex justify-center items-center hover:bg-ctp-overlay0 transition-all;
+  @apply bg-ctp-surface1 w-8 h-8 shadow-md rounded-full flex justify-center items-center transition-all;
+  &:hover {
+    @apply bg-ctp-overlay0 transition-all;
+  }
 }
 
 .line-dot {
@@ -28,11 +31,16 @@ body {
   @apply border-ctp-subtext0;
 }
 
-.hover-button:hover {
-  @apply text-ctp-overlay2 transition-all;
-  cursor: pointer;
+.hover-button {
+  @apply transition-all;
+  &:hover {
+    @apply text-ctp-overlay2 transition-all cursor-pointer;
+  }
 }
 
-.hyperlink:hover {
-  @apply text-ctp-blue transition-all;
+.hyperlink {
+  @apply transition-all;
+  &:hover {
+    @apply text-ctp-blue transition-all;
+  }
 }

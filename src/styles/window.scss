@@ -39,7 +39,10 @@
       .icon {
         width: 20px;
         height: 20px;
-        @apply rounded-full bg-ctp-red hover:bg-ctp-maroon transition-all cursor-pointer;
+        @apply rounded-full bg-ctp-red transition-all;
+        &:hover {
+          @apply hover:bg-ctp-maroon transition-all cursor-pointer;
+        }
       }
     }
   }

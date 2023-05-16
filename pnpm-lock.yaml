@@ -14,7 +14,7 @@ specifiers:
   prettier: ^2.8.7
   sass: ^1.62.0
   tailwindcss: ^3.3.1
-  typescript: ^4.9.3
+  typescript: ^5.0.0
   vite: ^4.2.0
   vue: ^3.2.47
   vue-tsc: ^1.2.0
@@ -23,7 +23,7 @@ dependencies:
   '@fortawesome/free-brands-svg-icons': 6.4.0
   '@fortawesome/free-regular-svg-icons': 6.4.0
   '@fortawesome/free-solid-svg-icons': 6.4.0
-  pinia: 2.0.34_hmuptsblhheur2tugfgucj7gc4
+  pinia: 2.0.34_dtjfskxukdxv24psui2m5c75zy
   sass: 1.62.0
   vue: 3.2.47
 
@@ -36,9 +36,9 @@ devDependencies:
   postcss: 8.4.23
   prettier: 2.8.7
   tailwindcss: 3.3.1_postcss@8.4.23
-  typescript: 4.9.5
+  typescript: 5.0.4
   vite: 4.2.2_sass@1.62.0
-  vue-tsc: 1.2.0_typescript@4.9.5
+  vue-tsc: 1.2.0_typescript@5.0.4
 
 packages:
 
@@ -904,7 +904,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /pinia/2.0.34_hmuptsblhheur2tugfgucj7gc4:
+  /pinia/2.0.34_dtjfskxukdxv24psui2m5c75zy:
     resolution: {integrity: sha512-cgOoGUiyqX0SSgX8XelK9+Ri4XA2/YyNtgjogwfzIx1g7iZTaZPxm7/bZYMCLU2qHRiHhxG7SuQO0eBacFNc2Q==}
     peerDependencies:
       '@vue/composition-api': ^1.4.0
@@ -917,7 +917,7 @@ packages:
         optional: true
     dependencies:
       '@vue/devtools-api': 6.5.0
-      typescript: 4.9.5
+      typescript: 5.0.4
       vue: 3.2.47
       vue-demi: 0.14.0_vue@3.2.47
     dev: false
@@ -1153,9 +1153,9 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /typescript/4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  /typescript/5.0.4:
+    resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
+    engines: {node: '>=12.20'}
     hasBin: true
 
   /update-browserslist-db/1.0.11_browserslist@4.21.5:
@@ -1229,7 +1229,7 @@ packages:
       he: 1.2.0
     dev: true
 
-  /vue-tsc/1.2.0_typescript@4.9.5:
+  /vue-tsc/1.2.0_typescript@5.0.4:
     resolution: {integrity: sha512-rIlzqdrhyPYyLG9zxsVRa+JEseeS9s8F2BbVVVWRRsTZvJO2BbhLEb2HW3MY+DFma0378tnIqs+vfTzbcQtRFw==}
     hasBin: true
     peerDependencies:
@@ -1237,7 +1237,7 @@ packages:
     dependencies:
       '@volar/vue-language-core': 1.2.0
       '@volar/vue-typescript': 1.2.0
-      typescript: 4.9.5
+      typescript: 5.0.4
     dev: true
 
   /vue/3.2.47:

@@ -58,4 +58,12 @@ export const apps: Window[] = [
     height: 150,
     content: async () => (await import('./windows/Contact.vue')).default,
   },
+  {
+    name: 'Detailed',
+    title: 'Redirecting...',
+    icon: ['fas', 'info-circle'],
+    width: 300,
+    height: 100,
+    content: async () => (await import('./windows/Detailed.vue')).default,
+  },
 ]

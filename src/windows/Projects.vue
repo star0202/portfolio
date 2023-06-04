@@ -37,6 +37,12 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: 'dibug',
+    techs: ['Python'],
+    description: 'Debugging Tool for discord.py',
+    repo: 'star0202/dibug',
+  },
+  {
     name: 'Portfolio',
     techs: ['Vue', 'TypeScript'],
     description: 'This Website!',

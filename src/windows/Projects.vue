@@ -20,6 +20,15 @@
             >
               <font-awesome-icon :icon="['fab', 'github']" />
             </a>
+            <a
+              v-if="project.web"
+              :href="project.web"
+              class="button-icon"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <font-awesome-icon :icon="['fas', 'globe']" />
+            </a>
           </div>
         </div>
       </div>
@@ -32,7 +41,8 @@ type Project = {
   name: string
   techs: string[]
   description: string
-  repo: string
+  repo?: string
+  web?: string
 }
 
 const projects: Project[] = [
@@ -53,6 +63,7 @@ const projects: Project[] = [
     techs: ['Vue', 'TypeScript'],
     description: 'This Website!',
     repo: 'star0202/portfolio',
+    web: 'https://starcea.vercel.app/',
   },
   {
     name: 'neis.ts',
@@ -65,6 +76,12 @@ const projects: Project[] = [
     techs: ['TypeScript'],
     description: 'Utility Discord Bot for School Discord Server',
     repo: 'star0202/jdbot-ts2',
+  },
+  {
+    name: 'Rena',
+    techs: ['Python'],
+    description: 'Rena of Team Crescendo',
+    web: 'https://team-crescendo.me/project/rena/',
   },
   {
     name: 'Crenata',

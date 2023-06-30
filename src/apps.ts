@@ -30,7 +30,7 @@ export const apps: Window[] = [
     name: 'Projects',
     title: 'Projects',
     icon: ['fas', 'project-diagram'],
-    width: 300,
+    width: 400,
     height: 500,
     content: async () => (await import('./windows/Projects.vue')).default,
   },

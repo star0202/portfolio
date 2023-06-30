@@ -47,6 +47,12 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: 'github-profile',
+    techs: ['TypeScript', 'Fastify', 'React'],
+    description: 'Generates profile banner based on Discord profile',
+    repo: 'star0202/github-profile',
+  },
+  {
     name: 'Logomatic',
     techs: ['TypeScript'],
     description: 'Personal Discord Logger',

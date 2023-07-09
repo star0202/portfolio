@@ -67,6 +67,15 @@ type Team = {
 
 const teams: Team[] = [
   {
+    name: 'Koreanbots',
+    org: 'koreanbots',
+    discord: 'koreanlist',
+    homepage: 'https://koreanbots.dev',
+    position: 'Developer',
+    from: '2023',
+    to: 'now',
+  },
+  {
     name: 'Team Crescendo',
     org: 'team-crescendo',
     discord: 'teamcrsd',

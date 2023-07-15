@@ -4,7 +4,7 @@
     <div class="mt-2">
       <div v-for="project in projects" class="border-t pt-4">
         <div class="flex-grow flex flex-col gap-1">
-          <div class="flex items-center gap-4">
+          <div class="flex items-center gap-4 whitespace-nowrap">
             <div class="text-xl">{{ project.name }}</div>
             <div class="line-dot" />
             <div class="text-md md-2">{{ project.techs.join(', ') }}</div>

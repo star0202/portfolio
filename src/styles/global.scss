@@ -44,3 +44,7 @@ body {
     @apply text-ctp-blue transition-all;
   }
 }
+
+::-webkit-scrollbar {
+  display: none;
+}

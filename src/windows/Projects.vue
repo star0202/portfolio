@@ -66,6 +66,12 @@ const projects: Project[] = [
     repo: 'star0202/dibug',
   },
   {
+    name: 'cts-template',
+    techs: ['TypeScript'],
+    description: 'Personal command.ts template',
+    repo: 'star0202/cts-template',
+  },
+  {
     name: 'Portfolio',
     techs: ['Vue', 'TypeScript'],
     description: 'This Website!',

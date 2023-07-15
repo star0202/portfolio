@@ -48,47 +48,45 @@ type Project = {
 
 const projects: Project[] = [
   {
+    name: 'EmojiZip',
+    techs: ['TypeScript'],
+    description: 'Zip your Emojis and upload it!',
+  },
+  {
     name: 'discord-profile',
     techs: ['TypeScript', 'Fastify', 'React'],
     description: 'Generates profile banner based on Discord profile',
-    repo: 'star0202/discord-profile',
   },
   {
     name: 'Logomatic',
     techs: ['TypeScript'],
     description: 'Personal Discord Logger',
-    repo: 'star0202/Logomatic',
   },
   {
     name: 'dibug',
     techs: ['Python'],
     description: 'Debugging Tool for discord.py',
-    repo: 'star0202/dibug',
   },
   {
     name: 'cts-template',
     techs: ['TypeScript'],
     description: 'Personal command.ts template',
-    repo: 'star0202/cts-template',
   },
   {
     name: 'Portfolio',
     techs: ['Vue', 'TypeScript'],
     description: 'This Website!',
-    repo: 'star0202/portfolio',
     web: 'https://starcea.vercel.app/',
   },
   {
     name: 'neis.ts',
     techs: ['TypeScript'],
     description: 'NEIS API Wrapper written in TypeScript',
-    repo: 'star0202/neis.ts',
   },
   {
     name: 'jdbot-ts2',
     techs: ['TypeScript'],
     description: 'Utility Discord Bot for School Discord Server',
-    repo: 'star0202/jdbot-ts2',
   },
   {
     name: 'Rena',
@@ -106,13 +104,11 @@ const projects: Project[] = [
     name: 'Rena-Reverse',
     techs: ['Python'],
     description: 'Reverse Engineered version of Rena',
-    repo: 'star0202/Rena-Reverse',
   },
   {
     name: 'github-bot-py',
     techs: ['Python'],
     description: 'Utility Discord Bot for Github',
-    repo: 'star0202/github-bot-py',
   },
   {
     name: 'Epbot-Origin',
@@ -124,7 +120,6 @@ const projects: Project[] = [
     name: 'Selenium',
     techs: ['Python'],
     description: 'Utility Discord Bot for School Coding Club Exhibition',
-    repo: 'star0202/Selenium',
   },
   {
     name: 'WhiteBot',
